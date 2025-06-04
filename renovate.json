@@ -8,7 +8,7 @@
   "packageRules": [
     {
       "matchDepTypes": ["action"],
-      "rangeStrategy": "pin",
+      "rangeStrategy": "bump",
       "versioning": "semver-coerced",
       "pinDigests": true
     }
