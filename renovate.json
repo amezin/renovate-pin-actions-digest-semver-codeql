@@ -4,5 +4,13 @@
     ":dependencyDashboard",
     ":pinAllExceptPeerDependencies",
     "helpers:pinGitHubActionDigestsToSemver"
+  ],
+  "packageRules": [
+    {
+      "matchDepTypes": ["action"],
+      "rangeStrategy": "pin",
+      "versioning": "semver-coerced",
+      "pinDigests": true
+    }
   ]
 }
