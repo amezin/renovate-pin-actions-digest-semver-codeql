@@ -2,13 +2,7 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
     ":dependencyDashboard",
-    ":pinAllExceptPeerDependencies"
-  ],
-  "packageRules": [
-    {
-      "extends": ["helpers:pinGitHubActionDigests"],
-      "rangeStrategy": "pin",
-      "versioning": "semver-coerced"
-    }
+    ":pinAllExceptPeerDependencies",
+    "helpers:pinGitHubActionDigestsToSemver"
   ]
 }
