@@ -4,5 +4,13 @@
     "config:best-practices",
     "config:js-app",
     "helpers:pinGitHubActionDigestsToSemver"
+  ],
+  "packageRules": [
+    {
+      "matchDepTypes": [
+        "action"
+      ],
+      "rangeStrategy": "auto"
+    }
   ]
 }
