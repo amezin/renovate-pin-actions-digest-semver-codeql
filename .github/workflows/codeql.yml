@@ -4,17 +4,7 @@ on:
 jobs:
   codeql:
     runs-on: ubuntu-latest
-    permissions:
-      security-events: write
-      packages: read
-      actions: read
-      contents: read
 
     steps:
       - uses: actions/checkout@v4
-
-      - uses: github/codeql-action/init@v3
-        with:
-          languages: actions
-
-      - uses: github/codeql-action/analyze@v3
+      - uses: github/codeql-action@v3
